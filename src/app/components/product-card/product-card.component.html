@@ -1,9 +1,0 @@
-<div class="card shadow border-1 border text-center p-3">
-    <img [src]="miProducto.image" class="card-img-top rounded-circle mt-3 mx-auto" alt="Foto de usuario"  height="200">
-         <h5><strong>{{miProducto.name}}</strong></h5> 
-         <p><strong>{{miProducto.price}} €</strong></p>
-      <hr>
-      <!--Insertamos aqui en componente de los botones-->
-      <app-botones [parent]="'card'" [_id]= "miProducto._id" [miProducto]= "miProducto"></app-botones>
-     
-</div>
