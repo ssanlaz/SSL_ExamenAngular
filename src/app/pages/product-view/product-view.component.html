@@ -1,0 +1,24 @@
+<div class="container mt-5">
+    <div class="card shadow border-2 border text-center p-3">
+        <div class="row align-items-center">
+            <aside class="col-md-4 text-center border-end border-4 border-info">
+              <img [src]="miProducto.image"  height="175px"  class="card-img-top mt-3 mx-auto" alt="Foto del producto">
+            </aside>
+              <div class="col-md-8">
+                <h3><strong>{{miProducto.name}}</strong></h3>
+                <br>
+                <h4>{{miProducto.price}} €</h4>
+                <br>
+                <h5><strong>Decripcion del producto:  </strong> {{miProducto.description}}</h5>
+                <h5><strong>Categoria:  </strong>{{miProducto.category}}</h5>
+                <h5><strong>Activo : </strong>{{miProducto.active ? 'Si' : 'No'}}</h5>
+    
+              <div class="d-flex justify-content-center mt-3">
+                <!--Añadimos el componente de los botones para cuando le das a ver detalles-->
+                <app-botones [parent]="'view'" [_id] ="miProducto._id" [miProducto]="miProducto"></app-botones>
+              </div>
+              </div>
+        </div>
+    </div>
+</div>
+
